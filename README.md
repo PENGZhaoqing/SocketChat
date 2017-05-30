@@ -1,8 +1,8 @@
 # SocketChat
 
-A simple chat-room implementation with python raw socket and multiple-threading. 
+A simple chat-room implementation with 200-lines python. 
 
-Good start for the socket programming in python
+Good start for multi-threads and socket programming in python
 
 ## Feature
 
