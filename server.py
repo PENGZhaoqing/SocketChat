@@ -38,6 +38,9 @@ class ServerThread(threading.Thread):
                     if self.cmpT(self.addr_list[i], (ip, int(port))):
                         # send msg to the specified ip and port
                         self.cons_list[i].send(self.msg_build(text, True))
+                        # display msg to sender
+                        if self.cons_list[i] is not self.client:
+                            self.client.send(self.msg_build(text, True))
                         break
 
     # construct the message
